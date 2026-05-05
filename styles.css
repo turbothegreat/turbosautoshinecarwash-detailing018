@@ -1,152 +1,43 @@
-/* General Body and Typography */
 body {
-    background-color: #121212; /* Dark background */
-    color: #f5f5f5; /* Light text for contrast */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 60px; /* Space for fixed navbar */
+background: #0a0a0a;
+color: white;
+font-family: Arial;
 }
 
-a {
-    color: #007bff; /* Bootstrap primary color */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #0056b3;
-}
-.section-title {
-    font-weight: 700;
-    color: #f5f5f5;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 3px;
-    width: 80px;
-    background-color: #007bff; /* Primary color separator */
-    border-radius: 2px;
-}
-
-/* --- Navigation --- */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.9); /* Slightly transparent dark background */
-    border-bottom: 1px solid #333;
+background: black;
 }
 
-.nav-logo {
-    width: 100px; /* Smaller logo in navbar */
+.hero {
+height: 100vh;
+background: linear-gradient(rgba(0,0,0,0.7), black),
+url('car-bg.jpg') center/cover;
 }
 
-/* --- Hero Section --- */
-.hero-section {
-    min-height: 80vh;
-    background: url('IMG-20251210-WA0047.jpg') no-repeat center center/cover; /* REPLACE with your image */
-    background-attachment: fixed; /* Parallax effect */
-    position: relative;
-    padding: 150px 0;
+.card {
+background: #111;
+border: 1px solid #2aff00;
+border-radius: 15px;
 }
 
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+.featured {
+border: 2px solid #00bfff;
+transform: scale(1.05);
 }
 
-.hero-section .container {
-    position: relative;
-    z-index: 10;
+.btn-success {
+background: #2aff00;
+border: none;
 }
 
-.hero-section h1 {
-    font-size: 3.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+.gallery img {
+transition: 0.3s;
 }
 
-.hero-section .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    transition: all 0.3s ease;
-}
-#services .extra-services-list .text-muted {
-    color: #0eff01 !important; /* Example: Changed to a bright yellow */
-}
-.service-card .list-group-item .text-muted {
-    color: #ffffff !important; /* Example: Changed to Bootstrap's Primary Blue */
-}
-#contact p.text-muted {
-    color: #ffffff !important; /* Example: Changed to White */
-}
-.hero-section .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-    transform: scale(1.05);
+.gallery img:hover {
+transform: scale(1.05);
 }
 
-/* --- Services Section --- */
-.service-card {
-    background-color: #1e1e1e; /* Slightly lighter dark background for cards */
-    border: 1px solid #333;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-.service-card .card-title {
-    color: #007bff;
-    font-weight: 600;
-    border-bottom: 2px solid #333;
-    padding-bottom: 15px;
-}
-
-.list-group-item {
-    background-color: transparent !important;
-    color: #f5f5f5 !important;
-    border-color: #333 !important;
-    padding: 15px 20px;
-}
-
-.highlight-item {
-    background-color: rgba(0, 123, 255, 0.1) !important; /* Light blue tint for best value */
-    border-left: 5px solid #007bff !important;
-}
-
-.extra-services-list .list-group-item {
-    background-color: #1e1e1e !important;
-    margin-bottom: 8px;
-    border-radius: 5px;
-}
-
-/* --- Footer --- */
-.footer {
-    background-color: #0a0a0a;
-    border-top: 1px solid #333;
-}
-
-/* --- Contact Info --- */
-.contact-info {
-    background-color: #1e1e1e;
-    border-color: #333 !important;
-}
-
-.contact-info .btn-success {
-    background-color: #28a745;
-    border-color: #28a745;
-}
-
-.contact-info .btn-success:hover {
-    background-color: #1e7e34;
-    border-color: #1c7430;
+footer {
+background: black;
 }
