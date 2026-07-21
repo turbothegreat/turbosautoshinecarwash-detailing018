@@ -9,13 +9,13 @@
   <title>Turbo’s AutoShine Detailing018 | Premium Mobile Detailing Mafikeng</title>
 
   <!-- CSS -->
+  <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="styles.css">
 
   <style>
-    /* Quick inline fix for Hero background if you haven't set it in styles.css */
     .hero-section {
       background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('hero-bg.jpg');
       background-size: cover;
@@ -23,7 +23,7 @@
       min-height: 80vh;
     }
     .card { transition: transform 0.3s; }
-    .card:hover { transform: translateY(-10px); }
+    .card:hover { transform: translateY(-5px); }
   </style>
 </head>
 
@@ -55,70 +55,147 @@
 
 <main>
   <!-- HERO -->
-  <header id="hero" class="hero-section text-center text-white d-flex align-items-center">
-    <div class="container animate__animated animate__fadeIn">
+  <!-- HERO -->
+  <header id="hero" class="hero-section text-center text-white d-flex align-items-center position-relative overflow-hidden">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="hero-video.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <!-- Dark Overlay so text stands out -->
+    <div class="hero-overlay"></div>
+
+    <div class="container animate__animated animate__fadeIn position-relative z-1">
       <h1 class="display-3 fw-bold">Turbo’s AutoShine Detailing018</h1>
       <p class="lead fs-3">Precision. Shine. Perfection.</p>
-      <p class="h5 mb-4"><i class="fas fa-map-marker-alt text-danger"></i> Mafikeng – We Come To You</p>
+      <p class="h5 mb-2"><i class="fas fa-map-marker-alt text-danger"></i> Mafikeng – We Come To You!</p>
+      <p class="text-success fw-bold mb-4">HOUSECALLS: R80 Around Mafikeng (FREE for Executive/Premium Package)</p>
       
       <div class="d-grid gap-2 d-sm-block">
         <a href="#booking" class="btn btn-success btn-lg px-4">Book Now</a>
         <a href="https://wa.me/27660373764?text=Hi%20I%20want%20to%20book%20a%20Turbo%20Detail" 
-           class="btn btn-outline-light btn-lg px-4" target="_blank">
-           <i class="fab fa-whatsapp"></i> WhatsApp
+            class="btn btn-outline-light btn-lg px-4" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
         </a>
       </div>
     </div>
   </header>
 
-  <!-- SERVICES -->
+  <!-- SERVICES / PRICE LIST -->
   <section id="services" class="container py-5 text-center">
-    <h2 class="mb-5 fw-bold">Our Detailing Packages</h2>
-    <div class="row g-4">
-      <!-- Quick Clean -->
-      <div class="col-md-4">
+    <h2 class="mb-2 fw-bold">Our Price List</h2>
+    <p class="text-muted mb-5">Strictly Appointments to Ensure Quality Service</p>
+    
+    <div class="row g-4 text-start">
+      <!-- Standard Package -->
+      <div class="col-lg-4">
         <div class="card h-100 shadow-sm p-3 border-0">
-          <div class="card-body">
-            <h4 class="fw-bold">🟢 Turbo Quick Clean</h4>
+          <div class="card-body d-flex flex-column">
+            <h4 class="fw-bold text-success">🟢 Standard Package</h4>
+            <p class="text-muted small mb-2"><i class="far fa-clock"></i> Duration: 1 – 2 hrs</p>
             <hr>
-            <p>Exterior wash • Tyres • Windows</p>
-            <h3 class="text-success fw-bold">From R130</h3>
+            <p class="fw-bold mb-2">Includes:</p>
+            <ul class="list-unstyled small mb-4">
+              <li>✓ Basic wash and dry</li>
+              <li>✓ Interior wipe down</li>
+              <li>✓ Interior vacuum</li>
+              <li>✓ Tyreshine</li>
+            </ul>
+            <div class="mt-auto">
+              <hr>
+              <div class="d-flex justify-content-between align-items-center mb-1"><span>Sedan / Small:</span><strong class="text-success">R100</strong></div>
+              <div class="d-flex justify-content-between align-items-center mb-1"><span>Bakkie / SUV:</span><strong class="text-success">R140</strong></div>
+              <div class="d-flex justify-content-between align-items-center"><span>Minibus:</span><strong class="text-success">R180</strong></div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Deep Clean -->
-      <div class="col-md-4">
+
+      <!-- Executive Package -->
+      <div class="col-lg-4">
         <div class="card h-100 shadow p-3 border-success border-2">
-          <div class="card-body">
-            <h4 class="fw-bold">🔵 Turbo Deep Clean ⭐</h4>
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center">
+              <h4 class="fw-bold text-primary">🔵 Executive Package</h4>
+              <span class="badge bg-primary">Popular</span>
+            </div>
+            <p class="text-muted small mb-2"><i class="far fa-clock"></i> Duration: 2 – 4 hrs</p>
             <hr>
-            <p>Deep wash • Decontamination • Interior wipe</p>
-            <h3 class="text-success fw-bold">From R180</h3>
-            <span class="badge bg-primary">Best Seller</span>
+            <p class="fw-bold mb-2">Includes Everything in Standard, Plus:</p>
+            <ul class="list-unstyled small mb-4">
+              <li>✓ Deep exterior wash & foam wash</li>
+              <li>✓ Thoroughly cleaned windows</li>
+              <li>✓ Deep carpets wash & vacuum</li>
+              <li>✓ Car door jam cleaned</li>
+              <li>✓ Decontamination process</li>
+              <li>✓ Leather seats cleaned & fabric vacuumed</li>
+              <li>✓ Comes with 24hrs rain-check</li>
+            </ul>
+            <div class="mt-auto">
+              <hr>
+              <div class="d-flex justify-content-between align-items-center mb-1"><span>Sedan / Small:</span><strong class="text-primary">R450</strong></div>
+              <div class="d-flex justify-content-between align-items-center mb-1"><span>Bakkie / SUV:</span><strong class="text-primary">R570</strong></div>
+              <div class="d-flex justify-content-between align-items-center"><span>Minibus:</span><strong class="text-primary">R700</strong></div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Signature -->
-      <div class="col-md-4">
-        <div class="card h-100 shadow-sm p-3 border-0">
-          <div class="card-body">
-            <h4 class="fw-bold">🟣 Turbo Signature Detail</h4>
+
+      <!-- Premium Package -->
+      <div class="col-lg-4">
+        <div class="card h-100 shadow-sm p-3 border-0 bg-light">
+          <div class="card-body d-flex flex-column">
+            <h4 class="fw-bold text-purple">🟣 Premium Package</h4>
+            <span class="badge bg-danger mb-2 w-50">Coming Soon!</span>
+            <p class="text-muted small mb-2"><i class="far fa-clock"></i> Duration: 4 – 10 hrs</p>
             <hr>
-            <p>Full wash • Polish • Wax • Interior</p>
-            <h3 class="text-success fw-bold">From R280</h3>
+            <p class="fw-bold mb-2">Includes Everything in Executive, Plus:</p>
+            <ul class="list-unstyled small mb-4 text-muted">
+              <li>✓ Polish and wax (swirl removal)</li>
+              <li>✓ Paint correction & ceramic coating</li>
+              <li>✓ Deep interior & exterior detailing</li>
+              <li>✓ Comes with 72hrs rain-check</li>
+            </ul>
+            <div class="mt-auto">
+              <hr>
+              <p class="text-danger small text-center fw-bold">Currently Unavailable</p>
+              <div class="d-flex justify-content-between align-items-center mb-1 text-muted"><span>Sedan / Small:</span><span>🔒 R1000</span></div>
+              <div class="d-flex justify-content-between align-items-center mb-1 text-muted"><span>Bakkie / SUV:</span><span>🔒 R1350</span></div>
+              <div class="d-flex justify-content-between align-items-center text-muted"><span>Minibus:</span><span>🔒 R1800</span></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <p class="mt-4 text-success fw-bold bg-light p-3 rounded d-inline-block">
-      🚗 Mobile Service Available – R80 (FREE for Premium Packages)
-    </p>
+
+    <!-- ADD-ONS -->
+    <div class="mt-5 p-4 bg-light rounded shadow-sm d-inline-block w-100 max-w-800">
+      <h4 class="fw-bold mb-3">🛠️ Add-Ons</h4>
+      <div class="row justify-content-center gap-4">
+        <div class="col-auto"><strong>Tyre Shine:</strong> R30</div>
+        <div class="col-auto"><strong>Pet Hair Removal:</strong> R50</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES BAR -->
+  <section class="bg-dark text-white py-4 text-center">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col"><i class="fas fa-shield-alt text-success fa-2x mb-1"></i><p class="small mb-0">Premium Products Used</p></div>
+        <div class="col"><i class="fas fa-user-check text-success fa-2x mb-1"></i><p class="small mb-0">Expert Detailers</p></div>
+        <div class="col"><i class="fas fa-car text-success fa-2x mb-1"></i><p class="small mb-0">Quality Guaranteed</p></div>
+        <div class="col"><i class="fas fa-smile text-success fa-2x mb-1"></i><p class="small mb-0">Satisfaction Guaranteed</p></div>
+        <div class="col"><i class="fas fa-clock text-success fa-2x mb-1"></i><p class="small mb-0">On Time Every Time</p></div>
+      </div>
+    </div>
   </section>
 
   <!-- GALLERY -->
   <section id="gallery" class="bg-light py-5">
     <div class="container text-center">
-      <h2 class="mb-4 fw-bold">Professional Results</h2>
+      <h2 class="mb-4 fw-bold">We Don't Just Clean, We Transform!</h2>
       <div class="row g-3">
         <div class="col-md-4">
           <img src="before1.jpg" alt="Dirty car before detailing" class="img-fluid rounded shadow-sm" loading="lazy">
@@ -150,7 +227,7 @@
       <div class="row justify-content-center">
         <div class="col-lg-6">
           <h2 class="text-center mb-4 fw-bold">Secure Your Slot</h2>
-          <p class="text-center text-success fw-bold">🔥 Most customers choose Turbo Deep Clean!</p>
+          <p class="text-center text-success fw-bold">🔥 Book your appointment today for top-tier mobile care!</p>
           
           <form id="bookingForm" action="https://formspree.io/f/xwpgpaoy" method="POST" class="bg-white p-4 rounded text-dark shadow">
             <div class="mb-3">
@@ -164,9 +241,17 @@
             <div class="mb-3">
               <label class="form-label fw-bold">Select Package</label>
               <select name="Package" class="form-select">
-                <option>Turbo Quick Clean</option>
-                <option selected>Turbo Deep Clean ⭐</option>
-                <option>Turbo Signature Detail</option>
+                <option>Standard Package</option>
+                <option selected>Executive Package</option>
+                <option disabled>Premium Package (Coming Soon)</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-bold">Vehicle Size</label>
+              <select name="VehicleSize" class="form-select">
+                <option>Sedan / Small</option>
+                <option>Bakkie / SUV</option>
+                <option>Minibus</option>
               </select>
             </div>
             <div class="mb-3">
@@ -184,6 +269,7 @@
   <section class="container text-center py-5">
     <h2 class="fw-bold mb-4">Contact Us</h2>
     <p class="h4 mb-4">066 037 3764 / 079 836 7645</p>
+    <p class="text-muted mb-4"><i class="fab fa-instagram text-danger"></i> Instagram: @turbosautosinedetailing018</p>
     <div class="d-flex justify-content-center gap-3">
       <a href="tel:+27660373764" class="btn btn-success btn-lg px-5">Call Now</a>
       <a href="https://wa.me/27660373764" class="btn btn-dark btn-lg px-5"><i class="fab fa-whatsapp"></i> Chat</a>
@@ -194,7 +280,7 @@
 <footer class="text-center py-4 bg-black text-white-50">
   <div class="container">
     <p class="mb-0">© 2026 Turbo’s AutoShine Detailing018. All Rights Reserved.</p>
-    <small>Expert Detailing in Mafikeng</small>
+    <small>Shine Today. Stand Out Everyday.</small>
   </div>
 </footer>
 
