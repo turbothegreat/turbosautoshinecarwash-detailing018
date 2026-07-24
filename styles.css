@@ -47,3 +47,57 @@ body {
 .card:hover {
   transform: translateY(-5px);
 }
+
+.standard-card {
+  background: linear-gradient(rgba(43, 43, 43, 0.8), rgba(43, 43, 43, 0.8)), url('Images/standard.jpg'); background-size: cover;
+}
+
+.executive-card {
+  background: linear-gradient(rgba(36, 36, 36, 0.8), rgba(43, 43, 43, 0.8)), url('Images/executive.jpg'); background-size: cover;
+  border-color: #0d6efd !important;
+}
+
+.premium-card {
+  background: linear-gradient(rgba(43, 43, 43, 0.8), rgba(43, 43, 43, 0.8)), url('Images/premium.jpg'); background-size: cover; /* Dark luxury background */
+  color: #ffffff !important;
+}
+/* Change title colors for specific packages */
+.standard-card h4 {
+  color: #198754 !important; /* Green */
+}
+
+.executive-card h4 {
+  color: #0d6efd !important; /* Blue */
+}
+
+.premium-card h4 {
+  color: #6f42c1 !important; /* Purple */
+}
+
+/* Change description text or list items inside a specific package */
+.standard-card p, .standard-card li {
+  color: #d5d4d4 !important; /* Dark grey */
+}
+.executive-card p, .executive-card li {
+  color: #d5d4d4 !important; /* Dark grey */
+}
+.premium-card p, .premium-card li {
+  color: #d5d4d4 !important; /* Dark grey */
+}
+.hr{
+  color: #ffffff !important; /* White horizontal rule for dark background */
+}
+/* Change text color for everything inside the dark Premium card */
+.premium-card, .premium-card p, .premium-card li, .premium-card span {
+  color: #ffffff !important; /* Pure white text for dark background */
+}
+/* Ensure text inside the dark premium card stays readable */
+.premium-card .text-muted, 
+.premium-card p, 
+.premium-card li, 
+.premium-card span {
+  color: #adb5bd !important;
+}
+.card .mt-auto span {
+  color: #ffffff; /* Change to your preferred color */
+}
