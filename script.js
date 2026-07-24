@@ -3,12 +3,12 @@ alert("Booking request sent! We will contact you shortly.");
 });
 
   const videoFiles = [
-  "Videos/video1.mp4", 
-  "Videos/video2.mp4", 
-  "Videos/video3.mp4",
-  "Videos/video4.mp4",
-  "Videos/video5.mp4",
-  "Videos/video6.mp4"
+  "Videos/Video1.mp4", 
+  "Videos/Video2.mp4", 
+  "Videos/Video3.mp4",
+  "Videos/Video4.mp4",
+  "Videos/Video5.mp4",
+  "Videos/Video6.mp4"
 ];
 let currentIndex = 0;
 
