@@ -22,6 +22,12 @@ body {
   transform: translate(-50%, -50%);
   object-fit: cover;
   z-index: 0;
+  
+  /* Performance Optimizations */
+  will-change: transform;
+  pointer-events: none;
+  backface-visibility: hidden;
+  transform: translate(-50%, -50%) translateZ(0); /* Forces GPU hardware acceleration */
 }
 .hero-overlay {
   position: absolute;

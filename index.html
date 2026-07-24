@@ -9,11 +9,11 @@
   <title>Turbo’s AutoShine Detailing018 | Premium Mobile Detailing Mafikeng</title>
 
   <!-- CSS -->
-  <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="scriptsheet" href="script.js">
 
   <style>
     .hero-section {
@@ -55,32 +55,28 @@
 
 <main>
   <!-- HERO -->
-  <!-- HERO -->
   <header id="hero" class="hero-section text-center text-white d-flex align-items-center position-relative overflow-hidden">
-    <!-- Background Video -->
-    <video autoplay muted loop playsinline class="hero-video">
-      <source src="hero-video.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-    
-    <!-- Dark Overlay so text stands out -->
-    <div class="hero-overlay"></div>
+  <!-- Background Video Playlist (Notice src is directly on the video tag) -->
+  <video autoplay muted playsinline id="heroVideo" class="hero-video" src="Videos/video1.mp4"></video>
+  
+  <!-- Dark Overlay -->
+  <div class="hero-overlay"></div>
 
-    <div class="container animate__animated animate__fadeIn position-relative z-1">
-      <h1 class="display-3 fw-bold">Turbo’s AutoShine Detailing018</h1>
-      <p class="lead fs-3">Precision. Shine. Perfection.</p>
-      <p class="h5 mb-2"><i class="fas fa-map-marker-alt text-danger"></i> Mafikeng – We Come To You!</p>
-      <p class="text-success fw-bold mb-4">HOUSECALLS: R80 Around Mafikeng (FREE for Executive/Premium Package)</p>
-      
-      <div class="d-grid gap-2 d-sm-block">
-        <a href="#booking" class="btn btn-success btn-lg px-4">Book Now</a>
-        <a href="https://wa.me/27660373764?text=Hi%20I%20want%20to%20book%20a%20Turbo%20Detail" 
-            class="btn btn-outline-light btn-lg px-4" target="_blank">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-        </a>
-      </div>
+  <div class="container animate__animated animate__fadeIn position-relative z-1">
+    <h1 class="display-3 fw-bold">Turbo’s AutoShine Detailing018</h1>
+    <p class="lead fs-3">Precision. Shine. Perfection.</p>
+    <p class="h5 mb-2"><i class="fas fa-map-marker-alt text-danger"></i> Mafikeng – We Come To You!</p>
+    <p class="text-success fw-bold mb-4">HOUSECALLS: R80 Around Mafikeng (FREE for Executive/Premium Package)</p>
+    
+    <div class="d-grid gap-2 d-sm-block">
+      <a href="#booking" class="btn btn-success btn-lg px-4">Book Now</a>
+      <a href="https://wa.me/27660373764?text=Hi%20I%20want%20to%20book%20a%20Turbo%20Detail" 
+          class="btn btn-outline-light btn-lg px-4" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- SERVICES / PRICE LIST -->
   <section id="services" class="container py-5 text-center">
@@ -286,7 +282,7 @@
 
 <!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="script.js"></script>
 <script>
 document.getElementById('bookingForm').addEventListener('submit', async function(e){
   e.preventDefault();
